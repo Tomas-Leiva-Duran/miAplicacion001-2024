@@ -5,6 +5,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'pagina-perfil',
+    loadChildren: () => import('./pagina-perfil/pagina-perfil.module').then( m => m.PaginaPerfilPageModule)
+  },
+  {
+    path: 'acceso',
+    loadChildren: () => import('./acceso/acceso.module').then( m => m.AccesoPageModule)
   }
 ];
 @NgModule({
