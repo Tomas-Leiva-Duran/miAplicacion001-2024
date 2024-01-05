@@ -8,7 +8,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'inicio',
+        path: 'Inicio',
         loadChildren: () => import('../Inicio/Inicio.module').then(m => m.InicioPageModule)
       },
       {
