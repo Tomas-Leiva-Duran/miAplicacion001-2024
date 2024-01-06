@@ -20,6 +20,14 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'perfil',
+        loadChildren: () => import('../pagina-perfil/pagina-perfil.module').then(m => m.PaginaPerfilPageModule)
+      },
+      {
+        path: 'otro',
+        loadChildren: () => import('../otro/otro-routing.module').then(m => m.OtroPageRoutingModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/Inicio',
         pathMatch: 'full'
